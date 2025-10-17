@@ -31,11 +31,12 @@ public class LeapYearTest
         isLeapYear.Should().Be(false);
     }
 
-    [Fact]
-    public void Debe_Dar_False_Si_Es_Divisible_100_Pero_No_400()
+    [Theory]
+    [InlineData(500)]
+    [InlineData(2000)]
+    public void Debe_Dar_False_Si_Es_Divisible_100_Pero_No_400(int year)
     {
         //Arrange
-        var year = 500;
         
         //Act
         var  isLeapYear = IsLeapYear(year);
@@ -46,7 +47,7 @@ public class LeapYearTest
 
     private bool IsLeapYear(int year)
     {
-        bool isLeap = year % 4 == 0;
+        var isLeap = year % 4 == 0;
         
         if (year>=400 && year % 400 != 0)
             isLeap = false;
