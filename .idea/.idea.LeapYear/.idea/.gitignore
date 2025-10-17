@@ -1,0 +1,33 @@
+﻿    # Build artifacts
+    bin/
+    obj/
+
+    # Rider files
+    .idea/
+
+    # Visual Studio files
+    .vs/
+    *.suo
+    *.user
+    *.resharper
+    *.bak
+    *.log
+    *.opendata
+    *.sqlite
+    *.dbmdl
+    *.tlog
+    *.cache
+
+    # Package files
+    packages/
+    *.nupkg
+    *.snupkg
+
+    # Test results
+    TestResults/
+
+    # Miscellaneous
+    *.pidb
+    *.vstst
+    *.vspscc
+    *.vssscc
