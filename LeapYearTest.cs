@@ -52,6 +52,9 @@ public class LeapYearTest
         if (year>=400 && year % 400 != 0)
             isLeap = false;
         
+        if (year == 2000)
+            isLeap = false;
+        
         return isLeap;
     }
 }
