@@ -33,7 +33,7 @@ public class LeapYearTest
 
     [Theory]
     [InlineData(500)]
-    [InlineData(2000)]
+    [InlineData(300)]
     public void Debe_Dar_False_Si_Es_Divisible_100_Pero_No_400(int year)
     {
         //Arrange
@@ -47,14 +47,9 @@ public class LeapYearTest
 
     private bool IsLeapYear(int year)
     {
-        var isLeap = year % 4 == 0;
+        if (year % 100 == 0 && year % 400 != 0)
+            return false;
         
-        if (year>=400 && year % 400 != 0)
-            isLeap = false;
-        
-        if (year == 2000)
-            isLeap = false;
-        
-        return isLeap;
+        return year % 4 == 0;
     }
 }
