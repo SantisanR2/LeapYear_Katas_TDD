@@ -19,7 +19,7 @@ public class LeapYearTest
     }
 
     [Fact]
-    public void test()
+    public void Debe_Dar_False_Si_No_Es_Divisible_4()
     {
         //Arrange
         var year = 21;
