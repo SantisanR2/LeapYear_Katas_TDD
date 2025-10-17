@@ -5,7 +5,7 @@ namespace LeapYear;
 public class LeapYearTest
 {
     [Fact]
-    public void Test1()
+    public void Debe_Dar_True_Si_Es_Divisible_4()
     {
         //Arrange
         var year = 16;
