@@ -33,6 +33,8 @@ public class LeapYearTest
 
     private bool IsLeapYear(int year)
     {
-        return true;
+        if (year % 4 == 0)
+            return true;
+        return false;
     }
 }
