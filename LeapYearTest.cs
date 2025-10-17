@@ -31,6 +31,19 @@ public class LeapYearTest
         isLeapYear.Should().Be(false);
     }
 
+    [Fact]
+    public void test()
+    {
+        //Arrange
+        var year = 500;
+        
+        //Act
+        var  isLeapYear = IsLeapYear(year);
+        
+        //Assert
+        isLeapYear.Should().Be(false);
+    }
+
     private bool IsLeapYear(int year)
     {
         if (year % 4 == 0)
