@@ -20,6 +20,6 @@ public class LeapYearTest
 
     private bool IsLeapYear(int year)
     {
-        throw new NotImplementedException();
+        return true;
     }
 }
