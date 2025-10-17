@@ -46,8 +46,14 @@ public class LeapYearTest
 
     private bool IsLeapYear(int year)
     {
+        var isLeap = false;
+        
         if (year % 4 == 0)
-            return true;
-        return false;
+            isLeap = true;
+        
+        if (year>=400 && year % 400 != 0)
+            isLeap = false;
+        
+        return isLeap;
     }
 }
